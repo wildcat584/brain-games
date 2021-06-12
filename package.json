@@ -1,0 +1,24 @@
+{
+  "name": "brain-games",
+  "version": "1.0.0",
+  "description": "Set of arithmetic console games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wildcat584/brain-games.git"
+  },
+  "keywords": [
+    "brain",
+    "games",
+    "console"
+  ],
+  "author": "Yuriy Shulga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wildcat584/brain-games/issues"
+  },
+  "homepage": "https://github.com/wildcat584/brain-games#readme"
+}
