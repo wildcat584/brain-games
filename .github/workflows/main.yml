@@ -9,6 +9,10 @@ jobs:
   eslint:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        Node: [14]
+
     steps:
     - name: Eslint checking
       run: echo "Hello"
