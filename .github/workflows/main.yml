@@ -14,5 +14,7 @@ jobs:
         Node: [14]
 
     steps:
+    - name: git clone
+      run: git clone https://github.com/wildcat584/brain-games
     - name: npm install build
       run: npm install
