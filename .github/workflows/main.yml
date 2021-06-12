@@ -14,5 +14,5 @@ jobs:
         Node: [14]
 
     steps:
-    - name: Eslint checking
-      run: echo "Hello"
+    - name: npm install build
+      run: npm install
