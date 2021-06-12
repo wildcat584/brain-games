@@ -6,15 +6,28 @@ on:
       - main
 
 jobs:
-  eslint:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
     strategy:
+      # Node versions list
       matrix:
-        Node: [14]
-
+        node-version: [13.x]
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: git clone
-      run: git clone https://github.com/wildcat584/brain-games
-    - name: npm install build
-      run: npm install
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '13'
+
+      - name: npm install, build
+        
+        run: npm install
+
+      - name: Run linter
+        # Run Linter
+        run: |
+          make lint
